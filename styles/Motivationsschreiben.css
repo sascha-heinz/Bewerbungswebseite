@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #242537  ;
+    color: white;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #202133;
+    padding: 0 30px 0 30px;
+}
+
+header * {
+    background-color: inherit;
+}
+
+#nav{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+#hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: auto;
+}
+
+#hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#Motivationsschreiben a {
+    color: #a02b93;
+}
+
+main {
+    min-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 20% 5% 20%;
+
+}
+
+footer {
+    background-color: #202133;  
+    height: 10%;
+}
+
+
+@media (max-width: 855px) {
+    #nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        background: #202133;
+        width: 200px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    main {
+    min-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10% 5% 10%;
+    }
+}
