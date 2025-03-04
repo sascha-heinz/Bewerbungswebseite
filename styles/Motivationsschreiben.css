@@ -51,7 +51,7 @@ header * {
 #hamburger div {
     width: 30px;
     height: 3px;
-    background: white !important;
+    background: #a02b93 !important;
 }
 
 a {
