@@ -1,0 +1,205 @@
+
+* {
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #242537 !important  ;
+    color: white !important;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #202133 !important;
+    padding: 0 30px 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+header * {
+    background-color: inherit !important;
+}
+
+#nav{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+#hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: auto;
+}
+
+#hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #a02b93 !important;
+}
+
+a {
+    text-decoration: none;
+    color: white !important;
+}
+
+
+#IT-Projekte a {
+    color: #a02b93 !important;
+}
+
+main {
+    min-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5% 2% 5%;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.absta {
+    height: 10%;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 700px;
+    flex-wrap: wrap;
+    gap: 100px;
+
+}
+
+#Excel, #Web, #Programme, #Sonstiges {
+    height: 600px;
+    min-height: auto;
+    width: 300px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+    padding: 20px 40px 20px 40px;
+}
+
+#Excel {
+    border-color: #66ffff !important;
+}
+
+#Web {
+    border-color: #00ffcc !important;
+}
+
+#Programme {
+    border-color: #333fff !important;
+}
+
+#Sonstiges {
+    border-color: #33ccff !important;
+}
+
+.topic {
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main ul li {
+    text-align: start;
+}
+
+footer {
+    background-color: #202133 !important;  
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;   
+}
+
+footer a {
+    background-color: #202133 !important;  
+}
+
+footer div {
+    display: none;
+}
+
+
+
+@media (max-width: 855px) {
+    #nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 10%;
+        right: 0;
+        background: #202133 !important;
+        width: 200px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    main {
+    min-height: 80%;
+    }
+
+    #Excel, #Web, #Programme, #Sonstiges {
+        height: auto;
+        min-height: auto;
+        width: 80%;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        padding: 20px 40px 20px 40px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    footer div {
+        display: flex;
+        color: #a02b93 !important;
+        background-color: #202133 !important;
+        width: 40%;
+    }
+
+    footer a {
+        width: 40%;
+    }
+}
